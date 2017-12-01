@@ -86,6 +86,10 @@ OBS: sera solicitado a senha para seguir com o procedimento, a mesma se encontra
 ###### 12) Testes concluidos, vamos reiniciar o DR4100:
 ![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-12-1.PNG)
 
+##
+###### 13) Ao reiniciar o equipamento , sera iniciado a restauração do software do equipamento, vamos aguardar:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-13.PNG)
+
 
 ##
 
