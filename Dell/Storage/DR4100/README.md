@@ -42,7 +42,7 @@ DR4100.
 
 ##
 ###### 4) Apos executar o console via java , vamos acessar via CLI o DR4100:
-![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-04.PNG)
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-04-1.PNG)
 
 ```sh
 # Usuario: administrator
@@ -76,7 +76,7 @@ OBS: sera solicitado a senha para seguir com o procedimento, a mesma se encontra
 
 ##
 ###### 10) Sera iniciado o diagnostico do equipamento, clique em next:
-![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-10.PNG)
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-10-1.PNG)
 
 ##
 ###### 11) Aguarde os testes:
