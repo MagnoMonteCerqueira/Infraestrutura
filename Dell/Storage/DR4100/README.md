@@ -26,105 +26,51 @@ DR4100.
 ###### 1) Vamos acessar o DR4100 via web (idrac):
 
 ![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-01.PNG)
+
 ```sh
-$ apt update && apt upgrade 
+# Usuario: root
+# Senha: calvin
 ```
 ##
-###### 2) Para a instalação do Zabbix Proxy 3.4 é necessário incluir no repositório as informações atualizadas do Zabbix:
+###### 2) Para iniciar o procedimento sera solicitado a troca da senha:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-02.PNG)
 
-```sh
-# cd /tmp
-# wget https://raw.githubusercontent.com/MagnoMonteCerqueira/Zabbix/master/Dicas_e_Truques/Zabbix_Proxy/Instalacao/3.4/Debian/Raiz/Arquivos/zabbix-release_3.4-1%2Bstretch_all.deb
-# dpkg -i zabbix-release_3.4-1+stretch_all.deb
-# apt-get update
-```
-##
-###### 3) Vamos instalar as dependencias necessarias para instalação do Zabbix Proxy:
-
-```sh
-# apt update && apt install vim build-essential snmp vim libssh2-1-dev libssh2-1 libopenipmi-dev libsnmp-dev wget libcurl4-gnutls-dev fping curl libcurl3-gnutls libcurl3-gnutls-dev libiksemel-dev libiksemel-utils libiksemel3 sudo libevent-dev libpcre3-dev 
- 
-```
 
 ##
-###### 4) Instalando o Zabbix Proxy x Zabbix Agent:
+###### 3) Dentro da Idrac, vamos clicar em launch e executar o aplicativo java para acesso via console:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-03.PNG)
+
+##
+###### 4) Apos executar o console via java , vamos acessar via CLI o DR4100:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-04.PNG)
 
 ```sh
-# apt install zabbix-proxy-mysql zabbix-agent
+# Usuario: administrator
+# Senha: St0r@ge!
 ```
 
 ##
-###### 5) Vamos acessar o banco de dados Mariadb, criar o o banco de dados para o Zabbix Proxy e criar o usuario para acesso ao banco:
-###### OBS: vamos inserir a senha zabbix no usuario para acesso.
-```sh
-# mariadb 
-# create database zabbix character set utf8;
-# GRANT ALL PRIVILEGES ON *.* TO zabbix@localhost IDENTIFIED BY 'zabbix' WITH GRANT OPTION;
-# exit;
-```
-##
-###### 6) Criando o Schema do Zabbix Proxy no banco de dados:
+###### 5) Vamos reiniciar o equipamento:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-05.PNG)
 
-```sh
-# zcat /usr/share/zabbix-proxy-mysql/schema.sql.gz | mysql -uzabbix -p zabbix
-```
+##
+###### 6) Apos reiniciar o DR4100, vamos precionar F2 para acessar o System Setup e configurar para boot via usb:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-06.PNG)
 
 ##
 ###### 7) Configurando o Zabbix Proxy para conexao ao banco de dados:
+OBS: Vamos selecionar, System Bios => Boot Settings => Bios Boot Settings => Hard-Disck Drive Seguence, e selecionar o pendrive como boot primario, clique em OK 
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-07.PNG)
+
+##
+###### 8) Na tela de Restore Manager, vamos selecionar Factory Reset, e fomatar o equipamento:
+OBS: sera solicitado a senha para seguir com o procedimento, a mesma se encontra abaixo da tela de do Restore Manager
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-08.PNG)
 
 ```sh
-#...
-DBHost=localhost
-#...
-DBName=zabbix
-#...
-DBUser=zabbix
-#...
-DBPassword=zabbix
-#..
+# Senha: resetmyappliance
 ```
 
-##
-###### 8) Reiniciando o Zabbix Proxy:
-
-```sh
-#  systemctl restart zabbix-proxy.service
-ou
-# /etc/init.d/zabbix-proxy restart
-```
-##
-###### 9) Verificando o funcionamento do Zabbix Proxy:
-
-```sh
-#  systemctl status zabbix-proxy.service
-ou
-# /etc/init.d/zabbix-proxy status
-```
-
-
-## Configuração Zabbix Proxy no Zabbix Server.
-
-###### 1) Acessando via web o Zabbix Server, entre com usuario e senha.
-##
-Clique em Sign in:
-##
-![Alt Text](https://github.com/MagnoMonteCerqueira/Zabbix/blob/master/Zabbix_3.4/src/img/Zabbix_proxy/nutela11.PNG)
-##
-
-Vamos em Administração => Proxies:
-##
-![Alt Text](https://github.com/MagnoMonteCerqueira/Zabbix/blob/master/Zabbix_3.4/src/img/Zabbix_proxy/nutela12.PNG)
-##
-
-Clique em Criar Proxy, coloquei o nome do seu servidor Proxy , Apos clique em adicionar:
-##
-![Alt Text](https://github.com/MagnoMonteCerqueira/Zabbix/blob/master/Zabbix_3.4/src/img/Zabbix_proxy/nutela113.PNG)
-##
-
-Vamos Aguardar a comunicação do Zabbix proxy com o Zabbix Server:
-##
-![Alt Text](https://github.com/MagnoMonteCerqueira/Zabbix/blob/master/Zabbix_3.4/src/img/Zabbix_proxy/nutela14.PNG)
-##
 
 ##
 
