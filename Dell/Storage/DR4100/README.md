@@ -64,12 +64,27 @@ OBS: Vamos selecionar, System Bios => Boot Settings => Bios Boot Settings => Har
 
 ##
 ###### 8) Na tela de Restore Manager, vamos selecionar Factory Reset, e fomatar o equipamento:
-OBS: sera solicitado a senha para seguir com o procedimento, a mesma se encontra abaixo da tela de do Restore Manager
+OBS: sera solicitado a senha para seguir com o procedimento, a mesma se encontra abaixo da tela do Restore Manager
 ![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-08.PNG)
-
 ```sh
 # Senha: resetmyappliance
 ```
+
+##
+###### 9) Sera iniciado o restore do equipamento:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-09.PNG)
+
+##
+###### 10) Sera iniciado o diagnostico do equipamento, clique em next:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-10.PNG)
+
+##
+###### 11) Aguarde os testes:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-11.PNG)
+
+##
+###### 12) Testes concluidos, vamos reiniciar o DR4100:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-12.PNG)
 
 
 ##
