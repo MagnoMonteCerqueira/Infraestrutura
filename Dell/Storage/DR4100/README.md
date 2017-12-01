@@ -84,7 +84,7 @@ OBS: sera solicitado a senha para seguir com o procedimento, a mesma se encontra
 
 ##
 ###### 12) Testes concluidos, vamos reiniciar o DR4100:
-![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-12.PNG)
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-12-1.PNG)
 
 
 ##
