@@ -23,9 +23,9 @@ DR4100.
 
 ## Reimage.
 
-##
-###### 1) Vamos acessar o servidor via ssh ou interface grafica e atualizar o repositório e atualizar o sistema como root:
+###### 1) Vamos acessar o DR4100 via web (idrac):
 
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-01.PNG)
 ```sh
 $ apt update && apt upgrade 
 ```
