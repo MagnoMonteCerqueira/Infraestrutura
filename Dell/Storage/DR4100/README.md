@@ -92,6 +92,11 @@ OBS: sera solicitado a senha para seguir com o procedimento, a mesma se encontra
 
 
 ##
+###### 14) Apos todo o procedimento de reimage , temos que seguir com a configuração inicial do DR4100:
+![Alt Text](https://raw.githubusercontent.com/MagnoMonteCerqueira/Infraestrutura/master/src/img/Dell/DR4100/dr4100-14.PNG)
+
+
+##
 
 ## Contatos:
 
